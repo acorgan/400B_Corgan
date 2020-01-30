@@ -1,3 +1,6 @@
+# this file contains a function which will read in a file and output the time in Myr, the total number of particles, and all of
+# the particle data (type, mass, x, y, z, vx, vy, vz) as an array 
+
 import numpy as np # importing numpy module
 import astropy.units as u # importing astropy.units module
 
