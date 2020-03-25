@@ -1,0 +1,46 @@
+\documentclass{aastex63}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+\begin{document}
+
+\title{Fate of Solar Analogs in M31 and M33}
+
+\author{Austin Corgan}
+
+\section{Introduction}
+
+The proposed topic for this project is the investigation of the fate of stars similar to the Sun in M31 and M33 over the course of time leading up to and including the merger of the two galaxies. Simulation data from \cite{van12} will be used to accomplish this.\\ 
+\indent Galaxy mergers and collisions have the potential to be significant events in galaxy evolution, and so the study of the fate of stars in galaxies during one of these events can be illuminating on a general level (though generalizations should be made with caution). The fate of solar analogs are of particular interest to us for obvious reasons. The future merger of the Milky Way with M31 is perhaps the most relevant galactic event of this kind to analyze, as it is not inconceivable that distant descendants of ours could live see these events firsthand \citep{cox08}. \\
+\indent The eventual merger of the Milky Way and M31 has been known of and studied for some time (\cite{dub06}, \cite{cox08}). 2012 simulation data from \cite{van12} puts the merger at $5.86^{+1.61}_{-0.72}$ Gyr from now. At least two close passes between the two galaxies are expected before the merger. Analysis of radial positions of solar analogs in the Milky Way have been analyzed as a function of time. Both \cite{van12} and \cite{cox08} conclude that there is a general trend of solar analogs to migrate outward as time progresses. \cite{cox08} notes that there is a low ($\sim 2.7 \%$) probability that a solar analog becomes stripped from the Milky Way and bound to M31 after the first close passage of the two galaxies and before the total merger. \cite{van12} notes that, while the distance from the center of the galaxy does tend to increase, no solar analogs in the Milky Way were found to either become completely unbounded or become bounded to M33 before or after the merger. Plots (produced by \cite{cox08}) of the positions of solar analogs in the Milky Way, as well as histograms of their distances from the center of the galaxy, are shown in Figure 1. As will be outlined in the $\S$ \ref{sec:proposal} below, similar graphs are hoped to be obtained for solar analogs in M31 and M33.\\
+\indent What exactly will be the fate of the Sun (or any solar analog) as a result of the MW-M31 merger is still an open question. All results have been probabilistic in nature (\cite{cox08}, \cite{van12}), though this may be the best that can be hoped for. While analysis of solar analogs in the Milky Way galaxy have been studied (\cite{cox08}, \cite{van12}), the question of the fate of solar analogs in M31 and M33 remains. This is the focus of this project proposal. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=14cm]{coxfigure.png}
+    \caption{Plots of positions and histograms of radii of solar analogs in the Milky Way at various points in time. Taken from \cite{cox08}.}
+    \label{coxfigure}
+\end{figure}
+
+
+
+\section{Proposal} \label{sec:proposal}
+
+Specific questions to be addressed are the time evolution of the position and velocity (relative to the center of mass of the galaxy) of solar analogs in M33 and M31 throughout the galaxy merger event of the Milky Way and M31. The percentage of solar analogs in each galaxy which either become completely unbounded or become bounded to a galaxy other than the one they started in. 
+
+To address these questions, solar analogs will first have to be determined. To do this, simulation data from \cite{van12} will be analyzed at SnapNumber 0. Particles with distance and velocity relative to the center of mass of the galaxy within some delta of that of the Sun at present day (8.29 kpc and 239 km/s \citep{van12}) will be selected. Velocity here will have to be matched the that of the Sun in both in-plane and out-of-plane components as in \cite{van12}. After identifying these particles, their positions and velocities will be analyzed through time (i.e., at later SnapNumbers). Graphs of y vs. x position can be constructed at various points in time (e.g., present day, after first passage, after second passage, post-merger, etc.) as in Figure \ref{coxfigure}. Histograms showing radial and velocity distributions throughout time can also be constructed, again as in Figure \ref{coxfigure}. The percentage of particles which are unbounded can be determined by classifying particles as unbounded if they are greater than some critical radius. The unbounded fraction can be graphed as a function of time as in Figure \ref{samplegraph}. The fraction of particles bound to a galaxy other than the one they started in can be determined similarly, where a transition can be said to occur if the particle is greater than some critical radius from the center of mass than the galaxy it started in, as well as within some critical radius of the center of mass of one of the other two galaxies. It may be more useful to give these fractions at a few points in time, rather than every 0.1 Gyr as in Figure \ref{samplegraph}. This is due to it being difficult to determine which galaxy a particular particle is bound to during passages (of MW and M31), so determining fractions before/after passages/merger may be more illuminating than a continuous tracking of the positions.\\
+\indent Given the similarity of M31 to the Milky Way in terms of mass, it is hypothesized that solar analogs in M31 will behave similarly to what has been found in \cite{cox08}, \cite{van12} for solar analogs in the Milky Way. That is, a tendency to move radially outward as time progresses, with no stars becoming unbound or bound to M33. A small fraction may be seen to become bound to the Milky Way upon close passage. Similar trends may be expected for M33, with perhaps a larger fraction becoming bound to M33 or the Milky Way on account of M33's smaller mass relative to M31 and the Milky Way. The circular velocities of solar analogs in M31 can be expected to increase after the merger, as the dark matter halos of the MW and M31 should combine to increase the dark matter density in the remnant relative to either galaxy individually, and thus a greater mass will be enclosed for any given radius, leading to an increase in circular velocity. The circular velocity of solar analogs in M33 should not be expected to vary greatly; even if the stars migrate outward, this should not necessarily lead to an increase in the circular velocity as seen by a typical galactic rotation curve, in which circular velocity is relatively constant past a certain radius. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=14cm]{samplegraph.png}
+    \caption{Representative graph of intended results showing the fraction of solar analogs in M31 or M33 which either become unbounded, become bounded to the other galaxy, or bounded to the Milky Way. Shape and numbers of graph arbitrarily chosen and should not be taken to correspond to actual or expected results.}
+    \label{samplegraph}
+\end{figure}
+
+\bibliography{ResearchAssignment2}{}
+\bibliographystyle{aasjournal}
+
+\end{document}
